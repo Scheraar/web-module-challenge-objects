@@ -89,7 +89,18 @@ function addRating(array, name, rating, feedback) {
   return array;
 }
 console.log(addRating(reviews, "Bob", 5, "Sucked"));
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
+function changeFeedback(array, index, feedback) {
+  array[index].feedback = feedback;
+  return array;
+}
+console.log(
+  changeFeedback(
+    reviews,
+    7,
+    "this place is chill with really cool people, great for getting work done on weekdays"
+  )
+);
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
