@@ -32,7 +32,13 @@ Your method should accept:
 and should return a number. 
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
-
+function myFunction(customer) {
+  if (customer === "teacher" || customer === "student") {
+    return 0.25 * burger.price;
+  } else cutomer === other;
+  return 0.1 * burger.price;
+}
+console.log(myFunction("teacher"));
 ///////////////Reviews (MVP)///////////////////
 
 const reviews = [
